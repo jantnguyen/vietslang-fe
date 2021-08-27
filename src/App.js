@@ -1,17 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react'
+import { Slide } from '@material-ui/core';
+import Slogan from './components/Slogan';
+import WordCard from './components/WordCard';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
         <nav>
           <img src="/image/vietslang-logo.png" alt=""/>
         </nav>
-
-      </header>
+        <Slogan/>
+        <WordCard/>
     </div>
-  );
+    )
+  }
 }
-
 export default App;
